@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TanzCorp - Software Selling Broker & Marketer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>TanzCorp</h2>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#faq" class="nav-link">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">We Connect Buyers and Sellers for the Best Software Deals</h1>
+                <p class="hero-subtitle">Your trusted partner in software acquisitions, setup, and marketing.</p>
+                <button class="cta-button" onclick="scrollToSection('contact')">
+                    <span>Get Started</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Comprehensive solutions for your software acquisition needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="service-title">Software Brokerage</h3>
+                    <p class="service-description">Expert mediation between software buyers and sellers, ensuring fair negotiations and transparent transactions that benefit all parties involved.</p>
+                    <button class="service-button" onclick="openServiceModal('brokerage')">Learn More</button>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    <h3 class="service-title">Acquisition Assistance</h3>
+                    <p class="service-description">Comprehensive support throughout the acquisition process, from initial evaluation to final purchase, with detailed due diligence and risk assessment.</p>
+                    <button class="service-button" onclick="openServiceModal('acquisition')">Learn More</button>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="service-title">Post-Acquisition Setup</h3>
+                    <p class="service-description">Seamless integration and configuration of your newly acquired software, including technical setup, user training, and system optimization.</p>
+                    <button class="service-button" onclick="openServiceModal('setup')">Learn More</button>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3 class="service-title">Marketing & Promotion</h3>
+                    <p class="service-description">Strategic marketing campaigns to maximize your software's market presence, including digital marketing, content creation, and brand positioning.</p>
+                    <button class="service-button" onclick="openServiceModal('marketing')">Learn More</button>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="service-title">Consultation & Strategy</h3>
+                    <p class="service-description">Expert strategic guidance for software investments, market analysis, and long-term planning to ensure optimal returns on your technology investments.</p>
+                    <button class="service-button" onclick="openServiceModal('consultation')">Learn More</button>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="service-title">Ongoing Support</h3>
+                    <p class="service-description">Continuous support and maintenance services to ensure your software investments continue to deliver value and remain competitive in the market.</p>
+                    <button class="service-button" onclick="openServiceModal('support')">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About TanzCorp</h2>
+                    <p class="about-description">
+                        TanzCorp stands as a trusted intermediary in the software marketplace, connecting buyers and sellers with transparency, integrity, and expertise. We manage the entire software acquisition lifecycle, ensuring secure transactions and long-term value for all parties involved.
+                    </p>
+                    <p class="about-description">
+                        Our mission is to revolutionize software acquisitions by providing comprehensive support, from initial evaluation to post-acquisition success, while maintaining the highest standards of trust and transparency in every transaction.
+                    </p>
+                </div>
+                <div class="stats-container">
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="stat-number" data-target="95">0</div>
+                        <div class="stat-label">Trust Rating</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="95"></div>
+                        </div>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="stat-number" data-target="90">0</div>
+                        <div class="stat-label">Support Quality</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="stat-number" data-target="98">0</div>
+                        <div class="stat-label">Experience Level</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="98"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="why-choose-us">
+                <div class="section-header">
+                    <h3 class="section-title">Why Choose TanzCorp</h3>
+                    <p class="section-subtitle">15+ years of proven expertise in software acquisitions</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Bank-Level Security</h4>
+                            <p>Military-grade encryption and secure escrow services protect every transaction with comprehensive due diligence.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Industry Veterans</h4>
+                            <p>50+ experts including former CTOs and M&A specialists with deep technology sector knowledge.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Proven ROI</h4>
+                            <p>40% better deal terms and 60% faster time-to-value with documented success metrics.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="feature-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Trusted Network</h4>
+                            <p>Access to 10,000+ verified software companies and technology partners worldwide.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">Trusted by leading companies worldwide</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"TanzCorp transformed our software acquisition process. Their expertise and attention to detail saved us months of research and negotiation. Highly recommended!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <span>CTO, TechCorp Solutions</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"The post-acquisition support was exceptional. TanzCorp ensured seamless integration and provided ongoing guidance that maximized our ROI."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <span>CEO, InnovateTech</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"Professional, transparent, and results-driven. TanzCorp delivered exactly what they promised and exceeded our expectations."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Emily Rodriguez</h4>
+                            <span>VP Operations, GlobalSoft</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Stats Section -->
+    <section class="company-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Successful Deals</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-number" data-target="200">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">Countries Served</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Get instant answers to your most important questions</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>What types of software deals do you handle?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We handle enterprise software, SaaS solutions, mobile applications, development tools, and industry-specific software. Our expertise spans from startup acquisitions to enterprise portfolios worth millions.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>How does TanzCorp ensure secure transactions?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We implement enterprise-grade security with encrypted communications, verified escrow services, comprehensive due diligence, and SOC 2 Type II certified platforms for complete transparency.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>What post-acquisition support do you provide?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Complete technical setup, data migration, user training, integration support, ongoing consultation, and 24/7 technical assistance to ensure your success with the software.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Why choose TanzCorp over direct purchase?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>40% better deal terms, comprehensive risk mitigation, expert negotiation, deep market knowledge, 60% faster acquisition process, and long-term partnership support.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h3>What are your fees and pricing structure?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Success-based fees with transparent pricing, flexible payment options, and ROI guarantee. Our fees are typically offset by better deal terms. Free initial consultation included.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>How long does the acquisition process take?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our streamlined process typically takes 4-8 weeks: consultation & research (weeks 1-2), due diligence (weeks 3-4), negotiation (weeks 5-6), and closing (weeks 7-8).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Ready to start your software acquisition journey?</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+91 909090909</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>info@tanzcorp.in</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Name</label>
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email</label>
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Message</label>
+                        <span class="error-message" id="message-error"></span>
+                    </div>
+                    <button type="submit" class="submit-button">
+                        <span class="button-text">Send Message</span>
+                        <div class="button-loader"></div>
+                    </button>
+                    <div class="form-message" id="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TanzCorp</h3>
+                    <p>Your trusted partner in software acquisitions, setup, and marketing.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/tanzcorp/posts/?feedView=all" target="_blank" class="social-link" title="Follow us on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/" target="_blank" class="social-link" title="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://facebook.com/" target="_blank" class="social-link" title="Follow us on Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/tanzcorp.in?igsh=MWhpNnlhcmhmZjl1Mw==" target="_blank" class="social-link" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TanzCorp. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Service Modal -->
+    <div class="modal-overlay" id="service-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Service Details</h2>
+                <button class="modal-close" onclick="closeServiceModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Dynamic content will be inserted here -->
+            </div>
+            <div class="modal-footer">
+                <button class="modal-cta" onclick="modalGetStarted()">Get Started</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- HubSpot Chatbot Embed (replace PORTAL_ID with your HubSpot portal ID) -->
+   <!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js-na2.hs-scripts.com/243912944.js"></script>
+<!-- End of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js-na2.hs-scripts.com/243902115.js"></script>
+</body>
+</html>
